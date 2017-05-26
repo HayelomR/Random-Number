@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>crystals</title>
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>crystals</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<h1>CrystalsCollector!</h1>
+	<h1>CrystalsCollector!</h1>
+	<div>
+		<div>
+			<p>At the start of each game you're given a random number.<br>
+				You must click on one of the four power crystals to match the random number.<br>Each power crystal has a hidden number.		
+			</p>
+		</div>
+		<div id="random">
+			<p>random number</p>
+		</div>
+		<div id="won">
+		<p>Wins:</p>
+	</div>
+	<div id="los">
+		<p>loss:</p>
+	</div>
+	<div class="crystals">
+		<img src="assets/images/blue.jpg" class="click" id="blue">
+		<img src="assets/images/red.jpg" class="click" id="red">
+		<img src="assets/images/yellow.jpg" class="click" id="yellow">
+		<img src="assets/images/green.jpg" class="click" id="green">
+	</div>
+	<div class="total">
+		<h2>Your Total Score
+			<span id="scoreTotal"></span>
+		</h2>
+	</div>
+<!-- 
+	<div id="greenB"></div> -->
 
-<div>
-<p>Wins:</p>
-</div>
-<div>
-	<p>loss:</p>
-</div>
-<div id="greenB"></div>
-
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="assets/javascript/games.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
