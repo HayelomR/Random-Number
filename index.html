@@ -4,7 +4,8 @@
 	<title>crystals</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
 			<p>Each time when the game starts the game will change the value of each crystal.</p>
 		</div>
 		<div class"numberToWin">
-			<p>Random Number = <span id="random"></span></p>
+			<p> Random Number = <span id="random"></span></p>
+		</div>
+		<div class="WinLos">
 			<p>WINS = <span id="won"></span></p> 
 			<p>LOSSES = <span id="los"></span></p>
-
 		</div>
-
 		<div class="crystals">
 			<img src="assets/images/blue.jpg" class="click" id="blue">
 			<img src="assets/images/red.jpg" class="click" id="red">
@@ -37,12 +38,14 @@
 		</div>
 
 		<div id="addNumber"></div> <!-- this will be the number that will be made by the addition of the random number genrated from crystals. -->
-<!-- 
-	<div id="greenB"></div> --> 
 </div> <!-- closes the wrapper -->
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
+<footer class="footer">
+      &copy; Hayelom Reda
+    </footer>
 
 </body>
 </html>

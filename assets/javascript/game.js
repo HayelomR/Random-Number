@@ -53,7 +53,6 @@ function initalizeGame (){
 			result();
 			
 		//changeResult();
-		console.log("userScore");
 	})
 
 		$("#red").on("click", function(){
@@ -70,7 +69,6 @@ function initalizeGame (){
 			$("#addNumber").html(addNumber);
 			result();
 			
-		//changeResult();
 
 	})
 

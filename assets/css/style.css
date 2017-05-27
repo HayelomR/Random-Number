@@ -1,6 +1,7 @@
 /*.total {
 	background-color: teal;
-	margin-bottom: 15px;
+	margin-
+	bottom: 15px;
 	margin-top: 10px;
 	width: 200px;
 	height: 45px;
@@ -8,18 +9,47 @@
 body{
 	margin: 10px;
 }
+h1{
+text-align: center;
+color: blue;
+padding: 20px;
+font-weight: bold;
+font-family: 'Satisfy', cursive;
+background-color: green;
+}
+#random{
+	font-weight: bolder;
+	font-size: 100px;
+	color:blue;
+}
+.WinLos{
+text-align: center;
+margin-left: 0px;
+font-weight: bolder;
+}
 .click {
 	height: 80px;
 	width: 80px;
-	color: green;
+	background-color: blue;
 }
 
-
+.instruction{
+	font-family: sans-serif;
+}
 #addNumber{
 background-color: green;
-	font-size: 45;
+	font-size: 190;
 	color: white;
-	padding: 30px;
-	width: 50px;
+	padding: 20px;
+	width: 100px;
 	height: 10px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #666666;
 }
