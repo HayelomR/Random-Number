@@ -19,79 +19,72 @@ var green = Math.floor((Math.random()* 12) + 1);// create a random number for gr
 var red = Math.floor((Math.random()* 12) + 1);// create a random number for red  crystal
 // console.log(blue);
 var yellow = Math.floor((Math.random()* 12) + 1);// create a random number for yellow crystal
-//console.log(yellow);
-// var changeResult = function (){
-// 	$("#won").empty();
-// 	$("#won").append(wins);// inserts a number at the of a win at the end of a content
-// 	$("#los").empty();
-// 	$("#los").append(losses);
-// 	$("#addNumber").empty();
-// 	$("#addNumber").append(addNumber);
-// 	$("#random").empty();
-// 	$("#random").append(random);
-	
-// }
 
 function initalizeGame (){
-	randomNumber =Math.floor(Math.random()*120+19);
+	random = Math.floor((Math.random()* 100) + 19);
+	$("#random").html(random);
 	blue = Math.floor(Math.random()*12+1);
 	green = Math.floor(Math.random()*12+1);
 	red= Math.floor(Math.random()*12+1);
 	yellow= Math.floor(Math.random()*12+1);
 	addNumber = 0;
-	$("#addNumber").html(addNumber);
-	
 
 	}// ends the initalize game function 
 
 	// lets create a function that will update the wins and losses
-	 function result(){
+	function result(){
 		if (addNumber == random){
 			wins++;
 			$("#won").html(wins);
 			initalizeGame();    
 		} else if (addNumber > random){
 			losses++;
-            $("#won").html(losses);
+			$("#los").html(losses);
 			console.log(losses)
 			initalizeGame();
-		} else {
-			addNumber();
-		}
+		 } 
 	}
 
-$(document).ready(function(){
+	$(document).ready(function(){
 
-	$("#blue").on("click", function(){
-		addNumber = addNumber + blue;
+		$("#blue").on("click", function(){
+			addNumber = addNumber + blue;
 			$("#addNumber").html(addNumber);
+			result();
+			
 		//changeResult();
 		console.log("userScore");
 	})
 
-	$("#red").on("click", function(){
-		addNumber = addNumber + red;
+		$("#red").on("click", function(){
+			addNumber = addNumber + red;
 			$("#addNumber").html(addNumber);
+			result();
+			
 		//changeResult();
 
 	})
 
-	$("#yellow").on("click", function(){
-		addNumber = addNumber + yellow;	
+		$("#yellow").on("click", function(){
+			addNumber = addNumber + yellow;	
 			$("#addNumber").html(addNumber);
+			result();
+			
 		//changeResult();
 
 	})
 
-	$("#green").on("click", function(){
-		addNumber = addNumber + yellow;	
+		$("#green").on("click", function(){
+			addNumber = addNumber + yellow;	
 			$("#addNumber").html(addNumber);
-		
-
-	})
+			result();
 
 
-});
+
+		})
+
+
+	});
 
 
 
