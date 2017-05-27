@@ -10,36 +10,39 @@
 <body>
 	<h1>CrystalsCollector!</h1>
 	<div>
-		<div>
-			<p>At the start of each game you're given a random number.<br>
-				You must click on one of the four power crystals to match the random number.<br>Each power crystal has a hidden number.		
-			</p>
+		<div class="wrapper"></div>
+		<div class="instruction">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will be a specific amount of points to your score.</p>
+			<p>You win the game by matching your total score to a random number.</p>
+			<p> you will lose the game if the total score above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts the game will change the value of each crystal.</p>
 		</div>
-		<div id="random">
-			<p>random number</p>
-		</div>
-		<div id="won">
-		<p>Wins:</p>
-	</div>
-	<div id="los">
-		<p>loss:</p>
-	</div>
-	<div class="crystals">
-		<img src="assets/images/blue.jpg" class="click" id="blue">
-		<img src="assets/images/red.jpg" class="click" id="red">
-		<img src="assets/images/yellow.jpg" class="click" id="yellow">
-		<img src="assets/images/green.jpg" class="click" id="green">
-	</div>
-	<div class="total">
-		<h2>Your Total Score
-			<span id="scoreTotal"></span>
-		</h2>
-	</div>
-<!-- 
-	<div id="greenB"></div> -->
+		<div class"numberToWin">
+			<p>Random Number = <span id="random"></span></p>
+			<p>WINS = <span id="won"></span></p> 
+			<p>LOSSES = <span id="los"></span></p>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+		</div>
+
+		<div class="crystals">
+			<img src="assets/images/blue.jpg" class="click" id="blue">
+			<img src="assets/images/red.jpg" class="click" id="red">
+			<img src="assets/images/yellow.jpg" class="click" id="yellow">
+			<img src="assets/images/green.jpg" class="click" id="green">
+		</div>
+		<div class="result">
+			<h2>Your Total Score is</h2>
+		</div>
+
+		<div id="addNumber"></div> <!-- this will be the number that will be made by the addition of the random number genrated from crystals. -->
+<!-- 
+	<div id="greenB"></div> --> 
+</div> <!-- closes the wrapper -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
