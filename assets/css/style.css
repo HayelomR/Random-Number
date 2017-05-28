@@ -1,68 +1,85 @@
-/*.total {
-	background-color: teal;
-	margin-
-	bottom: 15px;
-	margin-top: 10px;
-	width: 200px;
-	height: 45px;
-}*/
-body{
-	margin: 10px;
-}
-h1{
-margin-left: 30%;
-text-align: center;
-margin-right: 30%;
-color: white;
-padding: 20px;
-font-weight: bold;
-font-family: 'Satisfy', cursive;
-background-color: green;
-}
-#random{
-	font-weight: bolder;
-	font-size: 100px;
-	
-}
-.WinLos{
 
-font-size: 20px;
+	body{
+
+		margin: 20px;
+		background-image: url("../images/background.jpg")
+	}
+	h1{
+		/*margin-left: 30%;*/
+		text-align: center;
+		margin-right: 50%;
 		color: white;
-		margin-left: 0px;
+		padding: 20px;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Satisfy', cursive;
+		background-color: green;
+	}
+	h2{
+		padding: 20px;
+		margin-right: 75%;
+		margin-top: 10px;
+		background-color: #008B8B;
+		font-size: 24px;
+		/*margin: 10px;*/
+	}
+	.crystals{
+		margin-top: 10px;
+	}
+	#random{
+		color: blue;
 		font-weight: bolder;
-}
-.size{
+		font-size: 100px;
+
+	}
+	.WinLos{
+
+		font-size: 30px;
+		/*color: white;*/
+		line-height: 40px;
+		/*margin-left: 20px;*/
+		font-weight: bolder;
+		/*float: right;*/
+	}
+	.size{
 		font-size: 30px;
 		
 		font-weight: bolder;
 	}
-.img {
-	height: 80px;
-	width: 80px;
-	background-color: blue;
-}
 
-.instruction{
-	margin-top: 10px;
-		line-height: 20px;
+	.img {
+		height: 80px;
+		width: 80px;
+
+	}
+
+	.instruction{
+
+		margin-top: 10px;
+		background-color: 	#FFF8DC;
+		color:green;
+		margin-right: 50%;
+		line-height: 30px;
 		font-size: 18px;
 		font-family: "Times New Roman", Georgia, Serif;
-}
+	}
 
-#addNumber{
-background-color: green;
+	#addNumber{
+		background-color: green;
+		color: blue;
 		margin-top: 5px;
+		font-size: 70px;
 		margin-bottom: 10px;
-		padding: 40px;
+		padding: 20px;
 		width: 100px;
+		height: 40px;
+	}
+	.footer {
+		position: fixed;
+		bottom: 0;
+		width: 110%;
+		text-align: center;
+		/* Set the fixed height of the footer here */
 		height: 50px;
-}
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  /* Set the fixed height of the footer here */
-  height: 25px;
-  background-color: #666666;
-}
+		background-color: #666666;
+	}
