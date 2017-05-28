@@ -4,7 +4,7 @@
 	<title>crystals</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -14,27 +14,27 @@
 		<div class="wrapper"></div>
 		<div class="instruction">
 			<p>You will be given a random number at the start of the game.</p>
-			<p>There are four crystals below. By clicking on a crystal you will be a specific amount of points to your score.</p>
+			<p>There are four crystals below. <br>By clicking on a crystal you will be a specific amount of points to your score.</p>
 			<p>You win the game by matching your total score to a random number.</p>
 			<p> you will lose the game if the total score above the random number.</p>
 			<p>The value of each crystal is hidden from you until you click on it.</p>
 			<p>Each time when the game starts the game will change the value of each crystal.</p>
 		</div>
 		<div class"numberToWin">
-			<p> Random Number = <span id="random"></span></p>
+			<p class="size"> Random Number = <span id="random"></span></p>
 		</div>
 		<div class="WinLos">
 			<p>WINS = <span id="won"></span></p> 
 			<p>LOSSES = <span id="los"></span></p>
 		</div>
 		<div class="crystals">
-			<img src="assets/images/blue.jpg" class="click" id="blue">
-			<img src="assets/images/red.jpg" class="click" id="red">
-			<img src="assets/images/yellow.jpg" class="click" id="yellow">
-			<img src="assets/images/green.jpg" class="click" id="green">
+			<img src="assets/images/blue.jpg" class="img" id="blue">
+			<img src="assets/images/red.jpg" class="img" id="red">
+			<img src="assets/images/yellow.jpg" class="img" id="yellow">
+			<img src="assets/images/green.jpg" class="img" id="green">
 		</div>
 		<div class="result">
-			<h2>Your Total Score is</h2>
+			<h2>Your Guessing Score</h2>
 		</div>
 
 		<div id="addNumber"></div> <!-- this will be the number that will be made by the addition of the random number genrated from crystals. -->
