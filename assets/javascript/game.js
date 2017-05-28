@@ -1,11 +1,11 @@
+//pseudo code
 //player should guess a number
 //there will be four crystals displayed on the page. that will generat a  random number 1-12
 //when crystals clicked they will add a specific amount of points
 //player when total score == randomnumber 
-
 var wins = 0;//number of wins
 var losses = 0;//number of loses
-var addNumber = 0;// this will change the numbers randomly.
+var addNumber = 0;// this will be the number created by all the crystals added to gether.
 // lets create a random number that will generate betwen 19 & 120. this will be guessed by the player.
 var random = Math.floor((Math.random()* 100) + 19);
 $("#random").html(random);// this pushs our random number to our html
@@ -46,21 +46,17 @@ function initalizeGame (){
 	}
 
 	$(document).ready(function(){
-
 		$("#blue").on("click", function(){
-			addNumber = addNumber + blue;
+			addNumber = addNumber + blue;//this adds the number creared with the value genreated by blue
 			$("#addNumber").html(addNumber);
 			result();
 			
-		//changeResult();
 	})
 
 		$("#red").on("click", function(){
 			addNumber = addNumber + red;
 			$("#addNumber").html(addNumber);
 			result();
-			
-		//changeResult();
 
 	})
 
